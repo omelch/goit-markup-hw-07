@@ -106,12 +106,12 @@ border: 1px solid #ECECEC;
     text-decoration: none;
 }
 
-.logo-header{
+.logo__header{
     padding-top: 24px;
     padding-bottom: 25px;
 }
 
-.logo-dark{
+.logo__dark{
     color: #000000;
 }
 
@@ -234,7 +234,7 @@ border: 1px solid #ECECEC;
     
 }
 
-.hero-title{
+.hero__title{
     color: var(--white-color);
     font-weight: 900;
     font-size: 44px;
@@ -261,7 +261,7 @@ border: 1px solid #ECECEC;
 }
 
    
-.hero-button, .btn{
+.hero__button, .btn{
     background-color: var(--accent-color);
     color: var(--white-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -278,8 +278,8 @@ border: 1px solid #ECECEC;
     transition: background-color, var(--transition-time-cubic); 
 }
 
-.hero-button:hover,
-.hero-button:focus {
+.hero__button:hover,
+.hero__button:focus {
     background-color: #188CE8;
 }
 
@@ -290,7 +290,7 @@ border: 1px solid #ECECEC;
 .features{
     padding-top: 94px;
 }
-.features-title{
+.features__title{
     color: var(--title-color);
     font-weight: 700;
     font-size: 14px;
@@ -300,7 +300,7 @@ border: 1px solid #ECECEC;
     padding-bottom: 10px;
 }
 
-.features-text{
+.features__text{
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
@@ -309,12 +309,12 @@ border: 1px solid #ECECEC;
     height: 75px;
 }
 
-.features-list{
+.features__list{
     display: flex;
     --items:4;
    }
 
-.features-box{
+.features__box{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -339,23 +339,23 @@ border: 1px solid #ECECEC;
     margin-bottom: 50px;
 }
 
-.work-list{
+.work__list{
     display: flex;
     --items: 3;
 }
 
-.work-image{
+.work__image{
     
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.work-box{
+.work__box{
     position: relative;
 }
 
-.label{
+.work__text{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -375,15 +375,15 @@ border: 1px solid #ECECEC;
 /* ----------------Section-Our-Team---------------- */
 /* ------------------------------------------------- */
 
-.our-team{
+.team{
     background-color: var(--secondary-bg-color);
 }
 
-.team-list{
+.team__list{
     --items:4;
 }
 
-.team-title{
+.team__title{
     color: var(--title-color);
     font-weight: 500;
     font-size: 16px;
@@ -393,7 +393,7 @@ border: 1px solid #ECECEC;
     margin-bottom: 10px;
 }
 
- .team-text{
+ .team__text{
     color: var(--text-color);
     font-size: 16px;
     line-height: 1.2;
@@ -401,13 +401,13 @@ border: 1px solid #ECECEC;
     text-align: center;
  }   
 
-.team-card{
+.team__card{
     padding-top: 30px;
     padding-bottom: 30px;
     
 }
  
-.team-item{
+.team__item{
     width: 270px;
     height: 428px;
     background: #FFFFFF;
@@ -456,23 +456,23 @@ border: 1px solid #ECECEC;
 /* --------------------Clients-------------------- */
 /* ------------------------------------------------- */
 
-.clients-list{
+.clients__list{
     display: flex;
     justify-content: center;
 }
 
 
-.clients-item{
+.clients__item{
     display: flex;
 
 }
 
-.clients-item:not(:last-child){
+.clients__item:not(:last-child){
     margin-right: 30px;
 }
 
 
-.clients-link{
+.clients__link{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -485,13 +485,13 @@ border: 1px solid #ECECEC;
     transition: border-color, var(--transition-time-cubic);
 }
 
-.clients-link:hover,
-.clients-link:focus{
+.clients__link:hover,
+.clients__link:focus{
     color: var(--accent-color);
     border-color: var(--accent-color);
 }
 
-.clients-icon{
+.clients__icon{
     fill: currentColor;
 }
 
@@ -499,7 +499,7 @@ border: 1px solid #ECECEC;
 /* --------------------Footer-------------------- */
 /* ------------------------------------------------- */
 
-.page-footer{
+.footer{
     background-color: var(--dark-background-color);
     padding-top: 60px;
     padding-bottom: 60px;
@@ -598,7 +598,7 @@ border: 1px solid #ECECEC;
 
 
 .footer-subscribe{
-margin-left: 93px;
+    margin-left: 93px;
 }
 
 .footer-subscribe-form{
@@ -642,9 +642,9 @@ margin-left: 93px;
 
 
 /* ------------------------------------------------- */
-/* --------------------Portfolio-------------------- */
+/* --------------------portfolio------------------- */
 /* ------------------------------------------------- */
-.portfolio-button{
+.portfolio__button{
     background-color:var(--secondary-bg-color) ;
     color: var(--title-color);
     border-radius: 4px;
@@ -661,35 +661,39 @@ margin-left: 93px;
     transition: box-shadow, var(--transition-time-cubic);
    }
 
-.portfolio-button:hover,
-.portfolio-button:focus {
+.portfolio__button:hover,
+.portfolio__button:focus {
     background-color: var(--accent-color);
     color: var(--white-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.filter-list{
+
+.portfolio__filtration {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 56px;
     justify-content: center;
 }
 
-.filter-list-item:not(:last-child){
+.portfolio__filter:not(:last-child){
     margin-right: 8px;
 }
 
-.portfolio-list {
+.portfolio__list {
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
     margin-top: -30px;
 }
     
-.portfolio-link{
+.portfolio__link{
     color: var(--text-color);
     text-decoration: none;
     margin: 0px;
 }
 
-.portfolio-title{
+.portfolio__title{
     color: var(--title-color);
     font-weight: 700;
     font-size: 18px;
@@ -698,7 +702,7 @@ margin-left: 93px;
     text-decoration: none;
 }
 
-.portfolio-text {
+.portfolio__text {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.9;
@@ -706,15 +710,7 @@ margin-left: 93px;
     text-decoration: none;
 }
 
-
-
-.filter-list {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 56px;
-}
-
-.content-item{
+.portfolio__content{
     flex-basis: calc((100% - 90px) / 3);
     margin-left: 30px;
     margin-top: 30px;
@@ -722,26 +718,24 @@ margin-left: 93px;
 }
 
 
-.content-item-wpapper {
+.portfolio__wrapper {
     border: 1px solid #EEEEEE;;
     border-top: 0px;
     padding: 20px 24px;
 }
 
-
-.content-item:focus,
-.content-item:hover{
+.portfolio__content:focus,
+.portfolio__content:hover{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-
-.portfolio-box{
+.portfolio__box{
     position: relative;
     overflow: hidden;
 }
 
 
-.portfolio-overlay{
+.portfolio__overlay{
     position: absolute;
     top: 0;
     left: 0;
@@ -752,13 +746,13 @@ margin-left: 93px;
     transition: background-color, var(--transition-time-cubic);
 }
 
-.content-item:hover .portfolio-overlay,
- .content-item:focus-within .portfolio-overlay
+.portfolio__content:hover .portfolio__overlay,
+.portfolio__content:focus-within .portfolio__overlay
 {
     transform: translateY(0);
 }
 
-.portfolio-overlay-text{
+.portfolio__overlay-text{
     color: var(--white-color);
     font-family: var(--primary-font-family);
     font-style: normal;
@@ -794,7 +788,6 @@ margin-left: 93px;
     pointer-events: none;
 }
 
-
 .modal{
     position: absolute ;
     top: 50%;
@@ -812,7 +805,7 @@ margin-left: 93px;
     transform: translate(-50%, -50%) scale(0.9);
   } 
 
-.modal-close-btn{
+.modal__close-btn{
     position: absolute;
     top: 0;
     right: 0;
@@ -829,17 +822,17 @@ margin-left: 93px;
     cursor: pointer;
     }
 
-.icon-close-btn{
+.icon__close-btn{
     fill: var(--title-color);
     transition: fill var(--transition-time-cubic);
 }
 
-.modal-close-btn:hover .icon-close-btn{
+.modal__close-btn:hover .icon__close-btn{
         fill: var(--accent-color);
     }
 
 
-.modal-form{
+.form{
     width: 100%;
     max-width: 528px;
     margin-left: auto;
@@ -847,7 +840,7 @@ margin-left: 93px;
     padding: 40px;
 }
 
-.form-strong{
+.form__heading{
     display: block;
     margin-bottom: 12px;
     font-weight: 700;
@@ -858,12 +851,12 @@ margin-left: 93px;
     color: #212121;   
 }
 
-.contact-form-wrapper{
+.form__wrapper{
     display: flex;
     flex-direction: column;
 }
 
-.form-input {
+.form__input {
     margin: 0;
     padding: 12px 42px;
     width: 100%;
@@ -879,11 +872,11 @@ margin-left: 93px;
 
 }
 
-.form-input:focus + .label-icon   {
+.form__input:focus + .form__icon   {
     fill: var(--accent-color);
   }
 
-  .form-input:focus{
+.form__input:focus{
     border: 1px solid #2196F3;
   }
 
@@ -915,7 +908,7 @@ margin-left: 93px;
   }
  
 
-.form-label {
+.form__label {
     position: relative;
     display: block;
     font-weight: 400;
@@ -924,7 +917,7 @@ margin-left: 93px;
     letter-spacing: 0.01em;
 }
 
-.form-checkbox{
+.form__checkbox{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -976,7 +969,7 @@ margin-left: 93px;
 }
 
 
-.label-icon{
+.form__icon{
     position: absolute;
     left: 15px;
     top: 29px;
