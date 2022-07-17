@@ -8,13 +8,9 @@
     padding-bottom: 60px;
 }
 
-.logo-footer{
-    display: block;
-    margin-bottom: 20px;
-    
-}
 
-.footer-link-location{
+
+.footer__link-location{
     color: var(--white-color);
     font-weight: 400;
     font-size: 14px;
@@ -25,7 +21,7 @@
     font-style: normal;
 }
 
-.footer-contacts-link{
+.footer__contacts-link{
     color: rgba(255, 255, 255, 0.6);
     font-weight: 400;
     font-size: 14px;
@@ -38,11 +34,11 @@
     
 }
 
- .footer-item:nth-child(n+2){
+ .footer__item:nth-child(n+2){
     margin-top: 9px;
 }
 
-.footer-title{
+.footer__title{
     font-family: var(--primary-font-family);
     font-style: normal;
     font-weight: 700;
@@ -54,17 +50,15 @@
     margin-bottom: 20px;
 }
 
-.footer-contacts-list{
+.footer__contacts-list{
     display: flex;
 }
 
-.footer-contacts-item:not(:last-child){
+.footer__contacts-item:not(:last-child){
     margin-right: 10px;
 }
 
-
-
-.footer-join-link{
+.footer__join-link{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,49 +69,46 @@
     border-radius: 50%;
     transition: background-color var(--transition-time-cubic);
     
-}
-
-
-.footer-join-link:hover,
- .footer-join-link:focus{
+&:hover,
+&:focus{
     color: var(--white-color);
     background-color: var(--accent-color);
+    }
 }
 
-.footer-contacts-icon{
+.footer__contacts-icon{
     fill: currentColor;
 }
 
 
-.footer-contacts{
+.footer__contacts{
     margin-left: 70px;
 }
 
-.footer-block{
+.footer__block{
     display: flex;
     align-items: baseline;
-    
 }
 
 
-.footer-subscribe{
+.footer__subscribe{
     margin-left: 93px;
 }
 
-.footer-subscribe-form{
+.footer__subscribe-form{
     display: flex;
     align-items: center;
     flex-direction: row
     
 }
 
-.btn-subscribe{
+.btn__subscribe{
     margin-left: 12px;
     display: flex;
     align-items: center;
 }
 
-.footer-subscribe-form input{
+.footer__subscribe-form input{
     color: var(--white-color);
     padding-left: 16px ;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -132,11 +123,11 @@
 
 }
 
-.footer-mail-input:focus {
+.footer__mail-input:focus {
     border: 1px solid var(--accent-color);
  }
 
-.footer-subscribe-icon{
+.footer__subscribe-icon{
     fill: var(--white-color);
     margin-left: 10px;
 }

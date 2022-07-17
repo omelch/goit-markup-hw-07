@@ -1,13 +1,12 @@
-@import "./components/others";
-@import "./components/header";
-@import "./components/hero";
-@import "./components/features";
-@import "./components/team";
-@import "./components/clients";
-@import "./components/footer";
-@import "./components/flex-box";
-@import "./components/portfolio";
-@import "./components/work";
-@import "./components/modal";
+// utils styles
+@import "./utils/index";
 
+// base styles
+@import "./base/index";
 
+// component styles;
+
+@import "./components/index";
+
+// layout styles
+@import "./layout/index";

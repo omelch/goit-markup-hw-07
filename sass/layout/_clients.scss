@@ -2,21 +2,22 @@
 /* --------------------Clients-------------------- */
 /* ------------------------------------------------- */
 
+.clients{
+    @extend %section
+}
+
 .clients__list{
     display: flex;
     justify-content: center;
 }
 
-
 .clients__item{
     display: flex;
 
-}
-
-.clients__item:not(:last-child){
+ &:not(:last-child){
     margin-right: 30px;
 }
-
+}
 
 .clients__link{
     display: flex;
@@ -29,12 +30,12 @@
     color:var(--color-icon);
     transition: color, var(--transition-time-cubic);
     transition: border-color, var(--transition-time-cubic);
-}
 
-.clients__link:hover,
-.clients__link:focus{
+&:hover,
+&:focus{
     color: var(--accent-color);
     border-color: var(--accent-color);
+}
 }
 
 .clients__icon{
